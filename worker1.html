@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .header{
+            width: auto;
+            height: 100px;
+            color: white;
+            background-color: rgb(21, 160, 160);
+            text-align: center;
+            text-decoration: none;
+
+        }
+        a{text-decoration: none;}
+        .body{
+            width: auto;
+            height: 550px;
+            background-color: aliceblue;
+             color: black;
+             margin-left: 30px;
+        }
+        .footer{
+            width: auto;
+            height: 70px;
+            color: white;
+            background-color: rgb(83, 99, 99); 
+            text-align: center;
+
+        }
+        @media screen and (max-width:600px) {
+            .header{
+                background-color: black;
+                color: rgb(216, 209, 209);
+                text-align: center;
+                
+            }
+            
+        }
+       @media screen and (max-width:650px) {
+        .header{
+            background-color: rgb(80, 90, 90);
+            color: white;
+           
+        
+        }
+        .footer{
+            background-color: rgb(80, 90, 90);
+            color: white;
+          
+        
+        }
+        .body{
+            text-align: center;
+        }
+        
+        
+       } 
+       @media screen and (max-width:750) {
+
+           .header{
+            background-color: rgb(30, 34, 34);
+            color: white;
+            display: inline-table;
+            font-size: small;
+        
+        }
+        .footer{
+            background-color: rgb(80, 90, 90);
+            color: white;
+            display: inline-block;
+        
+        }
+       
+       }
+       a:hover{
+        background-color: azure;
+        color: black;
+       }
+        
+     
+       
+                
+
+            
+            
+        
+        
+        
+    </style>
+</head>
+<body>
+   <div class="header">
+    <h1>XYZ Company Limited</h1>
+    <a href="#">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">Product us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#">contact us</a>
+   </div>  
+   <div class="body">
+    
+<div id="display">
+   <button type="button" onclick="product()">View</button>
+   </div>  
+   <div class="footer">
+    <p>2023 ZYX Company Ltd All right reserved</p>
+   </div> 
+   <script>
+   
+   
+    function product(){
+        document.getElementById("display").innerHTML="<h1>Our Product</h1><br><h2>Product 1</h2>100FRW<h2>Product 2</h2>500FRW<h2>Product 3</h2>80FRW";
+    }
+   </script> 
+</body>
+</html>
